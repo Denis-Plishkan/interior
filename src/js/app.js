@@ -67,6 +67,8 @@ isWebp()
 // =======================================================================================================
 
 import burger from './modules/burger.js'
-import thesisSwiper from './modules/swiper.js'
+import heroSwiper from './modules/swiper.js'
+import headerDropdown from './modules/dropdown.js'
+import heroDropdown from './modules/dropdown.js'
 
 
