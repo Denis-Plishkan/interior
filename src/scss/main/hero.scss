@@ -1,6 +1,16 @@
 .hero {
   position: relative;
   top: -96px;
+  margin-bottom: 123px;
+  @media (max-width: 1060px) {
+    margin-bottom: 84px;
+  }
+  @media(max-width: 769px) {
+    margin-bottom: 8px;
+  }
+  @media(max-width: 420px) {
+    margin-bottom: -15px;
+  }
 
   &__container {
   }
@@ -302,7 +312,7 @@
 
     @media (max-width: 1025px) {
       left: 55px;
-      bottom: 33px;
+      bottom: 32px;
       gap: 41px;
     }
     @media (max-width: 769px) {
@@ -493,6 +503,8 @@
     background: transparent;
     border: 1px solid #c4c4c4;
     border-radius: 88px;
+    padding: 12px 11px 9px 11px;
+
   }
 
   svg {

@@ -1,0 +1,150 @@
+.flatCard {
+  // .flatCard__wrapper
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1048px;
+    margin: 0 auto;
+  }
+
+  // .flatCard__left
+
+  &__left {
+  }
+
+  // .flatCard__left-title
+
+  &__left-title {
+    max-width: 424px;
+    position: relative;
+    z-index: 2;
+    h3 {
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 142.4%; /* 51.264px */
+    }
+  }
+
+  // .flatCard__right
+
+  &__right {
+    padding-top: 180px;
+  }
+
+  // .flatCard__right-text
+
+  &__right-text {
+    max-width: 339px;
+    padding-bottom: 44px;
+    position: relative;
+    z-index: 2;
+    p {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 170.66%; /* 23.892px */
+    }
+  }
+
+  // .flatCard__right-button
+
+  &__right-button {
+    border: 1px solid;
+    background: #fff;
+    color: #000;
+  }
+
+  // .flatCard__wrapper-img
+
+  &__wrapper-img {
+    display: flex;
+    position: absolute;
+    top: 110px;
+    left: 142px;
+
+  }
+
+  // .flatCard__img
+
+  &__img {
+  }
+
+  // .flatCard__img-first
+
+  &__img-first {
+  }
+
+  // .flatCard__img-second
+
+  &__img-second {
+    position: absolute;
+    left: 66px;
+  }
+
+  // .flatCard__img-third
+
+  &__img-third {
+    position: absolute;
+    left: 105px;
+    bottom: 25px;
+  }
+
+  // .flatCard__img-fourth
+
+  &__img-fourth {
+    position: absolute;
+    left: 170px;
+    bottom: 53px;
+  }
+
+  // .flatCard__img-fifth
+
+  &__img-fifth {
+    position: absolute;
+    left: 215px;
+    bottom: 71px;
+  }
+
+  // .flatCard__img-sixth
+
+  &__img-sixth {
+    position: absolute;
+    left: 264px;
+    bottom: 91px;
+  }
+
+  // .flatCard__img-seventh
+
+  &__img-seventh {
+    position: absolute;
+    left: 329px;
+    bottom: 112px;
+  }
+
+  // .flatCard__img-eighth
+
+  &__img-eighth {
+    position: absolute;
+    bottom: 117px;
+    left: 368px;
+  }
+
+  // .flatCard__img-nineth
+
+  &__img-nineth {
+    position: absolute;
+    left: 435px;
+    bottom: 145px;
+  }
+
+  // .flatCard__img-tenth
+
+  &__img-tenth {
+    position: absolute;
+    left: 480px;
+    bottom: 164px;
+  }
+}
