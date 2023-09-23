@@ -55,6 +55,7 @@
     img {
       height: 744px;
       width: 100%;
+      object-fit: cover;
 
       @media (max-width: 1025px) {
         height: 710px;
@@ -72,6 +73,7 @@
     img {
       height: 744px;
       width: 100%;
+      object-fit: cover;
 
       @media (max-width: 1025px) {
         height: 710px;

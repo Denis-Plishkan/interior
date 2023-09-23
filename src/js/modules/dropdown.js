@@ -1,41 +1,23 @@
-function headerDropdown() {
-  const dropdowns = document.querySelectorAll(".header__dropdown");
+
+function dropdownHandler(
+  dropdownSelector,
+  labelSelector,
+  menuSelector,
+  itemSelector,
+  labelTextSelector
+) {
+  const dropdowns = document.querySelectorAll(dropdownSelector);
 
   dropdowns.forEach((dropdown) => {
-    const items = dropdown.querySelectorAll(".dropdown-menu li");
-    const labelText = dropdown.querySelector(".label-text");
-    const label = dropdown.querySelector(".dropdown-label");
-    const menu = dropdown.querySelector(".dropdown-menu");
+    const items = dropdown.querySelectorAll(itemSelector);
+    const labelText = dropdown.querySelector(labelTextSelector);
+    const label = dropdown.querySelector(labelSelector);
+    const menu = dropdown.querySelector(menuSelector);
 
     label.addEventListener("click", () => {
       menu.classList.toggle("active");
       label.classList.toggle("active");
     });
-    items.forEach((item) => {
-      item.addEventListener("click", (e) => {
-        labelText.textContent = e.target.textContent;
-        menu.classList.remove("active");
-        label.classList.remove("active");
-      });
-    });
-  });
-}
-
-headerDropdown();
-
-function heroDropdown() {
-  const dropdowns = document.querySelectorAll(".hero__dropdown");
-
-  dropdowns.forEach((dropdown) => {
-    const items = dropdown.querySelectorAll(".hero__dropdown-menu li");
-    const labelText = dropdown.querySelector(".hero__label-text");
-    const label = dropdown.querySelector(".hero__dropdown-label");
-    const menu = dropdown.querySelector(".hero__dropdown-menu");
-
-    label.addEventListener("click", (e) => {
-      menu.classList.toggle("active");
-      label.classList.toggle("active");
-    });
 
     items.forEach((item) => {
       item.addEventListener("click", (e) => {
@@ -47,27 +29,17 @@ function heroDropdown() {
   });
 }
 
-heroDropdown();
-
-// function footerDropdown() {
-//   const dropdown = document.querySelector(".footer__dropdown");
-//   const items = dropdown.querySelectorAll(".dropdownFooter-menu li");
-//   const labelText = dropdown.querySelector(".label-text");
-//   const label = dropdown.querySelector(".dropdownFooter-label");
-//   const menu = dropdown.querySelector(".dropdownFooter-menu");
-
-//   label.addEventListener("click", () => {
-//     menu.classList.toggle("active");
-//     label.classList.toggle("active");
-//   });
-
-//   items.forEach((item) => {
-//     item.addEventListener("click", (e) => {
-//       labelText.textContent = e.target.textContent;
-//       menu.classList.remove("active");
-//       label.classList.remove("active");
-//     });
-//   });
-// }
-
-// footerDropdown();
+dropdownHandler(
+  ".header__dropdown",
+  ".dropdown-label",
+  ".dropdown-menu",
+  ".dropdown-menu li",
+  ".label-text"
+);
+dropdownHandler(
+  ".hero__dropdown",
+  ".hero__dropdown-label",
+  ".hero__dropdown-menu",
+  ".hero__dropdown-menu li",
+  ".hero__label-text"
+);

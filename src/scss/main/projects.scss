@@ -78,8 +78,11 @@
   }
 
   &__inner {
-    padding-bottom: 171px;
+    padding-bottom: 178px;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
   }
 
   &__inner-sidebar {
@@ -110,8 +113,8 @@
 
   &__card-wrapper {
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 7px;
+    flex-grow: 1;
+    gap: 9px;
   }
 
   // .projects__card
