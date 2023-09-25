@@ -1,0 +1,102 @@
+.contacts {
+  // .contacts__title
+
+  &__title {
+    h3 {
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+
+  // .contacts__text
+
+  &__text {
+    p {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 170.66%;
+      opacity: 0.6;
+    }
+  }
+
+  // .contacts__info-wrapper
+
+  &__info-wrapper {
+  }
+
+  // .contacts__info-city
+
+  &__info-city {
+  }
+
+  // .contacts__city
+
+  &__city {
+    p {
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      letter-spacing: 0.66px;
+    }
+  }
+
+  // .contacts__city-city
+
+  &__city-city {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 136.528%;
+  }
+
+  // .contacts__city-info
+
+  &__city-info {
+  }
+
+  // .contacts__info-link
+
+  &__info-link {
+  }
+
+  // .contacts__link
+
+  &__link {
+  }
+
+  // .contacts__link-link
+
+  &__link-link {
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.66px;
+  }
+
+  // .contacts__link-wrapper
+
+  &__link-wrapper {
+  }
+
+  // .contacts__link-wrap
+
+  &__link-wrap {
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.66px;
+  }
+
+  // .contacts__button
+
+  &__button {
+    background: #fff;
+    color: #000;
+  }
+}
