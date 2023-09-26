@@ -4,6 +4,11 @@ Swiper.use([Navigation, Pagination, Autoplay, Scrollbar]);
 
 
 function heroSwiper() {
+  const heroSwiper = document.querySelector('.hero__swiper');
+  if (!heroSwiper) {
+    return;
+  }
+  
   let swiper = new Swiper(".hero__swiper", {
     spaceBetween: 0,
     slidesPerView: 'auto',

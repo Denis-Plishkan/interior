@@ -177,6 +177,9 @@
 
   &__button-left {
     pointer-events: painted;
+    a {
+      color: #fff;
+    }
   }
 
   &__content-button {
@@ -261,6 +264,7 @@
       font-weight: 600;
       line-height: normal;
       letter-spacing: 0.66px;
+      color: #fff;
     }
   }
 
@@ -281,6 +285,7 @@
       font-weight: 600;
       line-height: normal;
       letter-spacing: 0.66px;
+      color: #fff;
     }
   }
 
@@ -539,6 +544,7 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.66px;
+    color: #fff;
   }
 }
 

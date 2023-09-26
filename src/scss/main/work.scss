@@ -4,20 +4,19 @@
   &__container {
     max-width: 1440px;
     padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 625px;
+    min-height: 617px;
     position: relative;
     @media (max-width: 1025px) {
-      min-height: 597px;
+      min-height: 591px;
     }
     @media (max-width: 768px) {
-      min-height: 639px;
+      min-height: 633px;
     }
     @media (max-width: 590px) {
-      min-height: 500px;
+      min-height: 475px;
     }
   }
 
@@ -26,6 +25,9 @@
   &__info {
     text-align: center;
     max-width: 429px;
+    @media (max-width: 376px) {
+      padding-top: 27px;
+    }
 
     p {
       padding-top: 14px;
@@ -232,7 +234,7 @@
 
   &__flat5 {
     left: -191px;
-    bottom: -245px;
+    bottom: -253px;
     z-index: -1;
     @media (max-width: 1025px) {
       display: none;
@@ -240,7 +242,7 @@
     @media (max-width: 590px) {
       display: block;
       left: -143px;
-      bottom: -49px;
+      bottom: -74px;
     }
     img {
       @media (max-width: 590px) {
@@ -253,18 +255,18 @@
 
   &__flat6 {
     left: 214px;
-    bottom: -94px;
+    bottom: -101px;
     @media (max-width: 1025px) {
       left: 4px;
-      bottom: -56px;
+      bottom: -61px;
     }
     @media (max-width: 768px) {
       left: -6px;
-      bottom: -78px;
+      bottom: -85px;
     }
     @media (max-width: 590px) {
       left: -2px;
-      bottom: 46px;
+      bottom: 22px;
     }
 
     img {
@@ -284,19 +286,19 @@
 
   &__flat7 {
     left: 49.2%;
-    bottom: -202px;
+    bottom: -210px;
     z-index: -1;
     @media (max-width: 1025px) {
       left: 47.2%;
-      bottom: -147px;
+      bottom: -154px;
     }
     @media (max-width: 768px) {
       left: 50.8%;
-      bottom: -164px;
+      bottom: -170px;
     }
     @media (max-width: 590px) {
       left: 53.2%;
-      bottom: -118px;
+      bottom: -143px;
     }
 
     img {
@@ -316,19 +318,19 @@
 
   &__flat8 {
     right: -152px;
-    bottom: -51px;
+    bottom: -59px;
     z-index: -1;
     @media (max-width: 1025px) {
       right: -206px;
-      bottom: -19px;
+      bottom: -26px;
     }
     @media (max-width: 768px) {
       right: -300px;
-      bottom: -14px;
+      bottom: -20px;
     }
     @media (max-width: 590px) {
       right: -174px;
-      bottom: 16px;
+      bottom: -9px;
     }
 
     img {

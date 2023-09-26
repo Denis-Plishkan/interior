@@ -108,6 +108,7 @@ body {
 
 // Подключение стилей отдельных блоков и секций =======================================================================================================================
 @import 'layout/header';
+@import 'layout/headerBlack';
 @import 'layout/footer';
 @import 'components/flatCard';
 @import 'components/contacts';
@@ -116,6 +117,8 @@ body {
 @import 'main/projects';
 @import 'main/work';
 @import 'main/contact';
+@import 'news/our';
+
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 

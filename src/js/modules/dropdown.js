@@ -10,7 +10,7 @@ function dropdownHandler(
 
   dropdowns.forEach((dropdown) => {
     const items = dropdown.querySelectorAll(itemSelector);
-    const labelText = dropdown.querySelector(labelTextSelector);
+    const labelText = dropdown.querySelectorAll(labelTextSelector);
     const label = dropdown.querySelector(labelSelector);
     const menu = dropdown.querySelector(menuSelector);
 

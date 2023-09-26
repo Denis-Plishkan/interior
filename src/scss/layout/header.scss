@@ -210,6 +210,7 @@
 
   &__item {
     a {
+      color: #fff;
       @media (min-width: 920px) {
         &:hover {
           color: #ff56f6;
@@ -424,6 +425,7 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.66px;
+    color: #fff;
   }
 }
 

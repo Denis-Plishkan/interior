@@ -1,6 +1,7 @@
 .contact {
   background: #000;
   position: relative;
+  margin-bottom: 0;
 
   &__bg {
     img {
@@ -10,7 +11,7 @@
       height: 100%;
       top: 0;
       object-fit: cover;
-      opacity: 0.05;
+      opacity: 0.1;
       pointer-events: none;
     }
   }
@@ -18,10 +19,61 @@
   // .contact__container
 
   &__container {
+    max-width: 1342px;
+
+    @media (max-width: 1025px) {
+      max-width: 937px;
+    }
+    @media (max-width: 768px) {
+      max-width: 704px;
+    }
+    @media (max-width: 590px) {
+      max-width: 355px;
+    }
   }
 
   // .contact__sidebar
 
   &__sidebar {
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 38px;
+    top: 140px;
+    @media (max-width: 1210px) {
+      left: -17px;
+    }
+    @media (max-width: 1025px) {
+      left: 31px;
+      top: 137px;
+    }
+    @media (max-width: 850px) {
+      left: -17px;
+    }
+    @media (max-width: 769px) {
+      left: 24px;
+      top: 120px;
+    }
+    @media(max-width:650px) {
+      display: none;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 6px;
+      left: -87px;
+      width: 71px;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.06);
+    }
+    p {
+      color: rgba(255, 255, 255, 0.1);
+      font-size: 8px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 170.66%; /* 13.653px */
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+    }
   }
 }
