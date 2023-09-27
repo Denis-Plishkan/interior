@@ -1,7 +1,7 @@
-function contactsForm () {
-    const contactsForm = document.querySelectorAll(".contacts__form-group");
+function loremForm () {
+    const loremForm = document.querySelectorAll(".lorem__form-group");
     
-    contactsForm.forEach((contactForm) => {
+    loremForm.forEach((contactForm) => {
         const input = contactForm.querySelector('input');
         const span = contactForm.querySelector('span');
 
@@ -14,4 +14,4 @@ function contactsForm () {
     })
 }
 
-contactsForm();
+loremForm();

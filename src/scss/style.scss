@@ -108,11 +108,18 @@ body {
 
 // Подключение стилей отдельных блоков и секций =======================================================================================================================
 @import 'layout/header';
+@import 'layout/headerBlack';
 @import 'layout/footer';
-// @import 'main/hero';
-
-
-
+@import 'components/flatCard';
+@import 'components/contacts';
+@import 'main/hero';
+@import 'main/company';
+@import 'main/projects';
+@import 'main/work';
+@import 'main/contact';
+@import 'news/our';
+@import 'news/lorem';
+@import 'oneNews/antrax';
 
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================

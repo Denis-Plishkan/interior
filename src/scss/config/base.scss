@@ -1,10 +1,14 @@
 body {
-  background-color: #E5E5E5;
   &.lock {
     overflow: hidden;
     touch-action: none;
   }
 }
+
+.body-black {
+  color: #000;
+}
+
 // Базовые анимации:
 // @import "keyframes";
 
@@ -21,6 +25,18 @@ body {
   max-width: rem($containerWidth + $mainOffset * 2);
   margin: 0 auto;
   padding: 0 rem($mainOffset);
+
+  @media(max-width: 1024px) {
+    max-width: 943px;
+  }
+
+  @media(max-width: 768px) {
+    max-width: 700px;
+  }
+
+  @media(max-width: 575px) {
+    max-width: 357px;
+   }
 }
 // Стили отзывчивых картинок (IBG) ============================================
 [class*="-ibg"] {

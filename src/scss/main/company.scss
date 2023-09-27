@@ -1,0 +1,430 @@
+.company {
+  // .company__container
+  margin-bottom: 140px;
+  @media(max-width: 1024px) {
+    margin-bottom: 124px;
+  }
+  @media(max-width: 768px) {
+    margin-bottom: 227px;
+  }
+  @media(max-width: 420px) {
+    margin-bottom: 251px;
+  }
+
+  &__container {
+    max-width: 1412px;
+    padding-left: 35px;
+
+    @media(max-width: 420px) {
+      padding-left: 24px;
+    }
+  }
+
+  // .company__top
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      gap: 50px;
+    }
+  }
+
+  &__top-container {
+    display: flex;
+    width: 1214px;
+    justify-content: space-between;
+
+    @media (max-width: 1060px) {
+      width: 850px;
+    }
+  }
+
+  // .company__top-sidebar
+
+  &__top-sidebar {
+    padding-top: 20px;
+    position: relative;
+
+    @media (max-width: 1060px) {
+      padding-top: 25px;
+      padding-left: 8px;
+    }
+    @media (max-width: 769px) {
+      padding-left: 0;
+    }
+    @media(max-width:590px) {
+      display: none;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      transform: rotate(-90deg);
+      top: 84px;
+      left: -10px;
+      border: 1px solid rgba(49, 49, 49, 0.2);
+      width: 57px;
+      opacity: 0.32;
+      @media (max-width: 1060px) {
+        left: -2px;
+      }
+      @media (max-width: 769px) {
+        left: -9px;
+      }
+    }
+    p {
+      transform: rotate(-90deg);
+      color: var(--5, #828282);
+      font-size: 8px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 170.66%; /* 13.653px */
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      opacity: 0.32;
+    }
+  }
+
+  // .company__top-content
+
+  &__top-content {
+  }
+
+  // .company__top-title
+
+  &__top-title {
+    padding-bottom: 11px;
+    @media (max-width: 1060px) {
+      padding-bottom: 0;
+    }
+    @media (max-width: 769px) {
+      padding-bottom: 2px;
+    }
+    @media(max-width: 420px) {
+      padding-bottom: 0;
+    }
+    h2 {
+      color: var(--1, #080808);
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+
+      @media (max-width: 1060px) {
+        font-size: 32px;
+      }
+      @media(max-width:590px) {
+        font-size: 26px;
+      }
+      @media(max-width: 355px) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  // .company__top-text
+
+  &__top-text {
+    max-width: 513px;
+    padding-bottom: 54px;
+    @media (max-width: 1060px) {
+      max-width: 442px;
+      padding-bottom: 36px;
+    }
+    @media (max-width: 769px) {
+      max-width: 517px;
+      padding-bottom: 33px;
+    }
+    @media(max-width: 420px) {
+      max-width: 331px;
+      padding-bottom: 31px;
+    }
+    p {
+      color: var(--1, #080808);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 163.66%;
+      opacity: 0.7;
+      padding-top: 15px;
+      letter-spacing: -0.3px;
+
+      @media (max-width: 1060px) {
+        padding-top: 14px;
+        letter-spacing: 0;
+        line-height: 168.66%;
+      }
+      @media (max-width: 769px) {
+        padding-top: 12px;
+      }
+      @media(max-width: 420px) {
+        padding-top: 16px;
+      }
+    }
+  }
+
+  // .company__top-button
+
+  &__top-button {
+    position: relative;
+    padding-left: 18px;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      transform: translate(-50%);
+      left: 5px;
+      border: 1px solid rgb(162 155 155 / 20%);
+      width: 8px;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      transform: translate(-50%);
+      left: 161px;
+      border: 1px solid rgb(162 155 155 / 20%);
+      width: 56px;
+    }
+    a {
+      color: var(--1, #080808);
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+    }
+  }
+
+  // .company__top-img
+
+  &__top-img {
+    position: relative;
+    left: 29px;
+    bottom: 80px;
+    @media (max-width: 1060px) {
+      left: 16px;
+      bottom: 56px;
+    }
+
+    @media (max-width: 802px) {
+      display: none;
+    }
+    img {
+      width: 513px;
+      height: 607px;
+
+      @media (max-width: 1060px) {
+        width: 349px;
+        height: 439px;
+      }
+    }
+  }
+
+  // .company__bottom
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1060px) {
+      padding-top: 105px;
+    }
+    @media (max-width: 769px) {
+      padding-top: 203px;
+    }
+    @media(max-width: 420px) {
+      padding-top: 199px;
+    }
+  }
+
+  &__bottom-inner {
+    display: flex;
+    gap: 281px;
+    align-items: center;
+
+    @media (max-width: 1320px) {
+      gap: 175px;
+    }
+    @media (max-width: 769px) {
+      gap: 47px;
+    }
+  }
+
+  &__bottom-content {
+    display: flex;
+    gap: 32px;
+    padding-top: 43px;
+
+    @media (max-width: 1060px) {
+      gap: 18px;
+      padding-top: 0;
+      padding-bottom: 15px;
+    }
+    @media (max-width: 769px) {
+      position: relative;
+      top: 178px;
+    }
+    @media(max-width:590px) {
+      right: 178px;
+      top: 205px;
+    }
+    @media(max-width: 420px) {
+      width: 324px;
+      right: 177px;
+      top: 221px;
+      gap: 28px;
+    }
+    @media(max-width: 355px) {
+      width: 270px;
+    }
+  }
+
+  &__bottom-quotes {
+    @media (max-width: 1060px) {
+      padding-top: 3px;
+    }
+    p {
+      color: var(--1, #080808);
+      font-family: Montserrat;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+
+      @media (max-width: 1060px) {
+        font-size: 25.575px;
+      }
+    }
+  }
+
+  // .company__bottom-img
+
+  &__bottom-imgs {
+    position: relative;
+    padding-left: 148px;
+
+    @media (max-width: 1320px) {
+      padding-left: 0;
+    }
+    @media (max-width: 1060px) {
+      padding-left: 124px;
+    }
+    @media (max-width: 769px) {
+      padding-left: 89px;
+    }
+    @media(max-width:590px) {
+      padding-left: 0;
+    }
+  }
+
+  &__bottom-img {
+    width: 316px;
+    height: 393px;
+
+    @media (max-width: 1060px) {
+      width: 190px;
+      height: 237px;
+    }
+    @media (max-width: 769px) {
+      width: 153px;
+      height: 191px;
+    }
+    @media (max-width: 652px) {
+      width: 131px;
+      height: 163px;
+    }
+  }
+
+  // .company__bottom-image
+
+  &__bottom-image {
+    position: absolute;
+    right: -199px;
+    top: -127px;
+    width: 279px;
+    height: 172px;
+    @media (max-width: 1060px) {
+      width: 190px;
+      height: 117px;
+      right: -153px;
+      top: -93px;
+    }
+    @media (max-width: 769px) {
+      width: 383px;
+      height: 235px;
+      right: -367px;
+      top: -138px;
+    }
+    @media (max-width: 652px) {
+      width: 264px;
+      height: 162px;
+      right: -247px;
+    }
+    @media(max-width: 420px) {
+      height: 180px;
+      right: -196px;
+    }
+    @media(max-width: 355px) {
+      right: -158px;
+    }
+  }
+
+  // .company__bottom-text
+
+  &__bottom-text {
+    max-width: 380px;
+    @media (max-width: 1060px) {
+      max-width: 313px;
+    }
+    @media (max-width: 769px) {
+      max-width: 295px;
+    }
+    p {
+      color: var(--1, #080808);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 170.66%;
+      opacity: 0.7;
+
+      @media (max-width: 1060px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  // .company__bottom-sidebar
+
+  &__bottom-sidebar {
+    padding-top: 192px;
+    position: relative;
+
+    @media (max-width: 1060px) {
+      display: none;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      transform: rotate(-90deg);
+      top: 279px;
+      left: 12px;
+      border: 1px solid rgba(49, 49, 49, 0.2);
+      width: 57px;
+      opacity: 0.32;
+    }
+    p {
+      transform: rotate(-90deg);
+      color: var(--5, #828282);
+      font-size: 8px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 170.66%;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      opacity: 0.32;
+    }
+  }
+}

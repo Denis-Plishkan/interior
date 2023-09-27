@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'news'
+  })
+  <body class="body-black">
+    <div class="wrapper">
+      @@include('html/headerBlack.html', {})
+      <main class="page">
+        <div data-observ></div>
+        @@include('html/news/our.html', {})
+        @@include('html/news/lorem.html', {})
+      </main>
+    </div>
+    @@include('html/script.html', {})
+  </body>
+</html> 
