@@ -3,6 +3,19 @@
   display: flex;
   margin-bottom: 112px;
 
+  @media(max-width: 1024px) {
+    min-height: 108px;
+    margin-bottom: 53px;
+  }
+  @media(max-width: 768px) {
+    min-height: 94px;
+    margin-bottom: 44px;
+  }
+  @media(max-width: 376px) {
+    min-height: 63px;
+    margin-bottom: 53px;
+  }
+
   &__button-wrapper {
     border: 1px solid #000;
   }
@@ -80,7 +93,7 @@
     }
   }
 
-  &__icon-menu.active {
+  &__icon-menu._active {
     &::after {
         background-color: #fff;
       }

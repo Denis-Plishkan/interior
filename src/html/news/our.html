@@ -3,6 +3,7 @@
     <div class="our__content-wrapper">
       <div class="our__content-title">
         <h1>Our latest news</h1>
+        <h2>Our news</h2>
       </div>
       <div class="our__content-links">
         <a href="#" class="our__content-link our__content-link_active">All</a>
@@ -10,10 +11,44 @@
         <a href="#" class="our__content-link">News</a>
         <a href="#" class="our__content-link">Advice from the designer</a>
       </div>
+      <div class="our__content-dropdown">
+        <div class="hero__dropdown">
+          <input
+            type="checkbox"
+            id="dropdown-toggle"
+            class="hero__dropdown-toggle"
+          />
+          <label for="dropdown-toggle" class="hero__dropdown-label our__dropdown-label">
+            <span class="hero__label-text">Apartments</span>
+            <div class="hero__content-rightSvg hero__content-rightSvg-black">
+              <svg xmlns="http://www.w3.org/2000/svg" width="9" height="6" viewBox="0 0 9 6" fill="none">
+                <path d="M8 1L4.5 4.5L1 1" stroke="#080808" stroke-width="1.4"/>
+                </svg>
+            </div>
+          </label>
+          <ul class="hero__dropdown-menu">
+            <a href="#">
+              <li>
+                <span>Apartments</span>
+              </li>
+            </a>
+            <a href="#">
+              <li>
+                <span>Blog</span>
+              </li>
+            </a>
+            <a href="#">
+              <li>
+                <span>News</span>
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="our__card-wrapper">
       <div class="our__card-top">
-        <div class="our__card">
+        <div class="our__card our__card-background">
           <div class="our__card-content">
             <h3 class="our__card-title">
               5 smart tips for productive collaboration with the designer
@@ -26,31 +61,44 @@
             <a href="#" class="our__card-button"> Discover more </a>
           </div>
         </div>
-        <div class="our__card">
-          <img src="./images/news/our/flat1.png" alt="flat" />
+        <div class="our__card our__card-desktop">
+          <a href="./oneNews.html">
+            <img src="./images/news/our/flat1.png" alt="flat" />
+          </a>
+        </div>
+        <div class="our__card our__card-mobile">
+          <a href="./oneNews.html">
+            <img src="./images/news/our/flat-mobile.png" alt="flat" />
+          </a>
         </div>
       </div>
       <div class="our__card-center">
         <div class="our__card">
-          <img src="./images/news/our/flat2.png" alt="flat" />
+          <a href="./oneNews.html">
+            <img src="./images/news/our/flat2.png" alt="flat" />
+          </a>
           <p class="our__card-info">Non-standard plinth options</p>
         </div>
         <div class="our__card">
-          <img src="./images/news/our/flat3.png" alt="flat" />
+          <a href="./oneNews.html">
+            <img src="./images/news/our/flat3.png" alt="flat" />
+          </a>
           <p class="our__card-info">Interior design, LCD Rybalsky</p>
         </div>
       </div>
 
       <div class="our__card-bottom">
-        <div class="our__card">
-          <img src="./images/news/our/flat4.png" alt="flat" />
+        <div class="our__card our__card-bottom-mobile">
+          <a href="./oneNews.html">
+            <img src="./images/news/our/flat4.png" alt="flat" />
+          </a>
         </div>
-        <div class="our__card">
-          <div class="our__card-content">
-            <h3 class="our__card-title">
+        <div class="our__card our__card-background">
+          <div class="our__card-content our__card-content-bottom">
+            <h3 class="our__card-title our__card-title-bottom">
               5 smart tips for productive collaboration with the designer
             </h3>
-            <p class="our__card-text">
+            <p class="our__card-text our__card-text-bottom">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel
               gravida urna. Donec blandit sapien eu diam ullamcorper euismod.
               Nam tempus pellentesque ligula ut aliquam.
