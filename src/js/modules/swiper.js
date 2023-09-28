@@ -37,4 +37,44 @@ function heroSwiper() {
 
 heroSwiper();
 
+function ourLatestSwiper() {
+  let swiper = new Swiper(".ourLatest__swiper", {
+    spaceBetween: 24,
+    slidesPerView: 'auto',
+    loop: true,
+    // autoplay: {
+    //   delay: 1000,
+    // },
+
+    breakpoints: {
+      320: {
+        slidesPerView: 1.2,
+        spaceBetween: 40,
+      },
+      375: {
+        slidesPerView: 1.2,
+        spaceBetween: 30,
+      },
+      768: {
+        slidesPerView: 1.5,
+        spaceBetween: -65,
+      },
+      991: {
+        slidesPerView: 2.5,
+        spaceBetween: -32,
+      },
+      1440: {
+        slidesPerView: 3.5,
+        spaceBetween: 38,
+      },
+      1920: {
+        slidesPerView: 4,
+      },
+    },
+  });
+}
+
+ourLatestSwiper();
+
+
 
