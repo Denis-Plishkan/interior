@@ -10,7 +10,7 @@ function dropdownHandler(
 
   dropdowns.forEach((dropdown) => {
     const items = dropdown.querySelectorAll(itemSelector);
-    const labelText = dropdown.querySelectorAll(labelTextSelector);
+    const labelText = dropdown.querySelector(labelTextSelector);
     const label = dropdown.querySelector(labelSelector);
     const menu = dropdown.querySelector(menuSelector);
 
@@ -21,9 +21,14 @@ function dropdownHandler(
 
     items.forEach((item) => {
       item.addEventListener("click", (e) => {
-        labelText.textContent = e.target.textContent;
+        if (labelText) {
+          labelText.textContent = e.target.textContent;
+        console.log(labelText.textContent);
+        console.log(e.target.textContent);
         menu.classList.remove("active");
         label.classList.remove("active");
+        }
+        
       });
     });
   });

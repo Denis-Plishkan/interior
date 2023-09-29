@@ -1,0 +1,66 @@
+.oneDonec {
+  // .oneDonec__container
+
+  &__container {
+  }
+
+  // .oneDonec__title
+
+  &__title {
+    color: var(--1, #080808);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 136.528%;
+  }
+
+  // .oneDonec__text
+
+  &__text {
+    color: var(--1, #080808);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 170.66%; /* 23.892px */
+    opacity: 0.7;
+  }
+
+  // .oneDonec__btn
+
+  &__btn {
+    color: var(--1, #080808);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+  }
+
+  // .oneDonec__flat-top
+
+  &__flat-top {
+  }
+
+  // .oneDonec__flat-center-wrapper
+
+  &__flat-center-wrapper {
+  }
+
+  // .oneDonec__flat-center
+
+  &__flat-center {
+  }
+
+  // .oneDonec__flat-bottom
+
+  &__flat-bottom {
+  }
+
+  // .oneDonec__bottom-button
+
+  &__bottom-button {
+    color: var(--1, #080808);
+    border: 1px solid var(--1, #666);
+  }
+}

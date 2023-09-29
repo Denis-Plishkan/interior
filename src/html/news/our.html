@@ -6,10 +6,10 @@
         <h2>Our news</h2>
       </div>
       <div class="our__content-links">
-        <a href="#" class="our__content-link our__content-link_active">All</a>
-        <a href="#" class="our__content-link">Blog</a>
-        <a href="#" class="our__content-link">News</a>
-        <a href="#" class="our__content-link">Advice from the designer</a>
+        <button type="button" data-filter=".all" class="active">All</button>
+        <button type="button" data-filter=".blog">Blog</button>
+        <button type="button" data-filter=".news">News</button>
+        <button type="button" data-filter=".advice">Advice from the designer</button>
       </div>
       <div class="our__content-dropdown">
         <div class="hero__dropdown">
@@ -29,17 +29,17 @@
           <ul class="hero__dropdown-menu">
             <a href="#">
               <li>
-                <span>Apartments</span>
+                <button type="button" data-filter=".all" class="active">Apartments</button>
               </li>
             </a>
             <a href="#">
               <li>
-                <span>Blog</span>
+                <button type="button" data-filter=".blog">Blog</button>
               </li>
             </a>
             <a href="#">
               <li>
-                <span>News</span>
+                <button type="button" data-filter=".news">News</button>
               </li>
             </a>
           </ul>
@@ -47,63 +47,130 @@
       </div>
     </div>
     <div class="our__card-wrapper">
-      <div class="our__card-top">
-        <div class="our__card our__card-background">
-          <div class="our__card-content">
-            <h3 class="our__card-title">
-              5 smart tips for productive collaboration with the designer
-            </h3>
-            <p class="our__card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel
-              gravida urna. Donec blandit sapien eu diam ullamcorper euismod.
-              Nam tempus pellentesque ligula ut aliquam.
-            </p>
-            <a href="#" class="our__card-button"> Discover more </a>
+      <div class="our__card-item mix all">
+        <div class="our__card-top">
+          <div class="our__card our__card-background">
+            <div class="our__card-content">
+              <h3 class="our__card-title">
+                5 smart tips for productive collaboration with the designer
+              </h3>
+              <p class="our__card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel
+                gravida urna. Donec blandit sapien eu diam ullamcorper euismod.
+                Nam tempus pellentesque ligula ut aliquam.
+              </p>
+              <a href="#" class="our__card-button"> Discover more </a>
+            </div>
+          </div>
+          <div class="our__card our__card-desktop">
+            <a href="./oneNews.html">
+              <img src="./images/news/our/flat1.png" alt="flat" />
+            </a>
+          </div>
+          <div class="our__card our__card-mobile">
+            <a href="./oneNews.html">
+              <img src="./images/news/our/flat-mobile.png" alt="flat" />
+            </a>
           </div>
         </div>
-        <div class="our__card our__card-desktop">
-          <a href="./oneNews.html">
-            <img src="./images/news/our/flat1.png" alt="flat" />
-          </a>
+        <div class="our__card-center">
+          <div class="our__card">
+            <a href="./oneNews.html">
+              <img src="./images/news/our/flat2.png" alt="flat" />
+            </a>
+            <p class="our__card-info">Non-standard plinth options</p>
+          </div>
+          <div class="our__card">
+            <a href="./oneNews.html">
+              <img src="./images/news/our/flat3.png" alt="flat" />
+            </a>
+            <p class="our__card-info">Interior design, LCD Rybalsky</p>
+          </div>
         </div>
-        <div class="our__card our__card-mobile">
-          <a href="./oneNews.html">
-            <img src="./images/news/our/flat-mobile.png" alt="flat" />
-          </a>
+  
+        <div class="our__card-bottom">
+          <div class="our__card our__card-bottom-mobile">
+            <a href="./oneNews.html">
+              <img src="./images/news/our/flat4.png" alt="flat" />
+            </a>
+          </div>
+          <div class="our__card our__card-background">
+            <div class="our__card-content our__card-content-bottom">
+              <h3 class="our__card-title our__card-title-bottom">
+                5 smart tips for productive collaboration with the designer
+              </h3>
+              <p class="our__card-text our__card-text-bottom">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel
+                gravida urna. Donec blandit sapien eu diam ullamcorper euismod.
+                Nam tempus pellentesque ligula ut aliquam.
+              </p>
+              <a href="#" class="our__card-button"> Discover more </a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="our__card-center">
-        <div class="our__card">
-          <a href="./oneNews.html">
-            <img src="./images/news/our/flat2.png" alt="flat" />
-          </a>
-          <p class="our__card-info">Non-standard plinth options</p>
-        </div>
-        <div class="our__card">
-          <a href="./oneNews.html">
-            <img src="./images/news/our/flat3.png" alt="flat" />
-          </a>
-          <p class="our__card-info">Interior design, LCD Rybalsky</p>
+      <div class="our__card-item mix blog">
+        <div class="our__card-top">
+          <div class="our__card our__card-background">
+            <div class="our__card-content">
+              <h3 class="our__card-title">
+                5 smart tips for productive collaboration with the designer
+              </h3>
+              <p class="our__card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel
+                gravida urna. Donec blandit sapien eu diam ullamcorper euismod.
+                Nam tempus pellentesque ligula ut aliquam.
+              </p>
+              <a href="#" class="our__card-button"> Discover more </a>
+            </div>
+          </div>
+          <div class="our__card our__card-desktop">
+            <a href="./oneNews.html">
+              <img src="./images/news/our/flat1.png" alt="flat" />
+            </a>
+          </div>
+          <div class="our__card our__card-mobile">
+            <a href="./oneNews.html">
+              <img src="./images/news/our/flat-mobile.png" alt="flat" />
+            </a>
+          </div>
         </div>
       </div>
-
-      <div class="our__card-bottom">
-        <div class="our__card our__card-bottom-mobile">
-          <a href="./oneNews.html">
-            <img src="./images/news/our/flat4.png" alt="flat" />
-          </a>
+      <div class="our__card-item mix news">
+        <div class="our__card-center">
+          <div class="our__card">
+            <a href="./oneNews.html">
+              <img src="./images/news/our/flat2.png" alt="flat" />
+            </a>
+            <p class="our__card-info">Non-standard plinth options</p>
+          </div>
+          <div class="our__card">
+            <a href="./oneNews.html">
+              <img src="./images/news/our/flat3.png" alt="flat" />
+            </a>
+            <p class="our__card-info">Interior design, LCD Rybalsky</p>
+          </div>
         </div>
-        <div class="our__card our__card-background">
-          <div class="our__card-content our__card-content-bottom">
-            <h3 class="our__card-title our__card-title-bottom">
-              5 smart tips for productive collaboration with the designer
-            </h3>
-            <p class="our__card-text our__card-text-bottom">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel
-              gravida urna. Donec blandit sapien eu diam ullamcorper euismod.
-              Nam tempus pellentesque ligula ut aliquam.
-            </p>
-            <a href="#" class="our__card-button"> Discover more </a>
+      </div>
+      <div class="our__card-item mix advice">
+        <div class="our__card-bottom">
+          <div class="our__card our__card-bottom-mobile">
+            <a href="./oneNews.html">
+              <img src="./images/news/our/flat4.png" alt="flat" />
+            </a>
+          </div>
+          <div class="our__card our__card-background">
+            <div class="our__card-content our__card-content-bottom">
+              <h3 class="our__card-title our__card-title-bottom">
+                5 smart tips for productive collaboration with the designer
+              </h3>
+              <p class="our__card-text our__card-text-bottom">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel
+                gravida urna. Donec blandit sapien eu diam ullamcorper euismod.
+                Nam tempus pellentesque ligula ut aliquam.
+              </p>
+              <a href="#" class="our__card-button"> Discover more </a>
+            </div>
           </div>
         </div>
       </div>

@@ -17,8 +17,6 @@ burger();
 function blackBurger() {
   const burger = document.querySelector(".black-header__icon-menu");
   const burgerMenu = document.querySelector(".black-header__menu");
-  console.log(burger);
-  console.log(burgerMenu);
 
   const body = document.querySelector("body");
   if (burger) {
