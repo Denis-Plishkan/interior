@@ -1,0 +1,124 @@
+.photos {
+  background: radial-gradient(50% 50% at 50% 50%, #0f0f0f 0%, #080808 100%);
+  margin-top: 140px;
+  height: 1320px;
+  @media (max-width: 1025px) {
+    margin-top: 125px;
+  }
+  @media (max-width: 768px) {
+    margin-top: 105px;
+    height: 971px;
+    margin-bottom: 0;
+  }
+  @media (max-width: 575px) {
+    margin-top: 80px;
+    height: 786px;
+  }
+
+  // .photos__container
+
+  &__container {
+  }
+
+  &__wrapper {
+    padding-top: 176px;
+    position: relative;
+
+    @media (max-width: 1025px) {
+      padding-top: 139px;
+    }
+    @media (max-width: 768px) {
+      padding-top: 120px;
+    }
+    @media (max-width: 575px) {
+      padding-top: 96px;
+    }
+  }
+
+  &__sidebar {
+    display: none;
+    @media (max-width: 1025px) {
+      display: block;
+      transform: rotate(-90deg);
+      position: absolute;
+      top: 161px;
+      left: -37px;
+
+      p {
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 170.66%; /* 13.653px */
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.13);
+
+        &::after {
+          position: absolute;
+          content: "";
+          width: 57px;
+          height: 1px;
+          background: rgba(255, 255, 255, 0.04);
+          top: 48%;
+          left: -73px;
+        }
+      }
+    }
+    @media (max-width: 575px) {
+      display: none;
+    }
+  }
+
+  // .photos__text
+
+  &__text {
+    color: var(--5, #828282);
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 170.66%; /* 13.653px */
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 179px;
+    padding-bottom: 14px;
+    @media (max-width: 1025px) {
+      padding-top: 140px;
+    }
+    @media (max-width: 768px) {
+      padding-top: 123px;
+      padding-bottom: 12px;
+    }
+    @media (max-width: 575px) {
+      padding-top: 94px;
+      padding-bottom: 7px;
+    }
+  }
+
+  // .photos__title
+
+  &__title {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    @media (max-width: 1025px) {
+      font-size: 32px;
+    }
+    @media (max-width: 575px) {
+      font-size: 26px;
+    }
+  }
+
+  // .photos__img
+
+  &__img {
+  }
+
+  &__flatCard-left {
+    @media (max-width: 575px) {
+      padding-bottom: 9px;
+    }
+  }
+}
