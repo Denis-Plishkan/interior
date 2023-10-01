@@ -1,0 +1,65 @@
+.philocophy {
+  position: relative;
+  margin-bottom: 260px;
+
+  &__header {
+    margin-bottom: 0;
+  }
+
+  // .philocophy__bg
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    img {
+      width: 100%;
+      min-height: 648px;
+      object-fit: cover;
+      @media(max-width: 575px) {
+        min-height: 535px;
+    }
+    }
+  }
+
+  // .philocophy__container
+
+  &__container {
+  }
+
+  // .philocophy__title
+
+  &__title {
+    color: var(--4, #fff);
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    max-width: 383px;
+    margin: 0 auto;
+    padding-top: 230px;
+    padding-bottom: 11px;
+    @media(max-width: 768px) {
+        font-size: 32px;
+        max-width: 346px;
+        padding-top: 180px;
+    }
+    @media(max-width: 575px) {
+        font-size: 26px;
+        max-width: 283px;
+    }
+  }
+
+  &__text {
+    color: var(--4, #fff);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 170.66%; /* 23.892px */
+    max-width: 383px;
+    margin: 0 auto;
+  }
+}

@@ -37,6 +37,66 @@ function heroSwiper() {
 
 heroSwiper();
 
+function companyTopSwiper() {
+  const heroSwiper = document.querySelector('.companyTop__swiper');
+  if (!heroSwiper) {
+    return;
+  }
+  
+  let swiper = new Swiper(".companyTop__swiper", {
+    spaceBetween: 0,
+    slidesPerView: 'auto',
+    slidesPerGroup: 1,
+    navigation: {
+      nextEl: '.companyTop__button-next',
+      prevEl: '.companyTop__button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'progressbar', 
+    },
+    // autoplay: {
+    //   delay: 1500,
+    // },
+    breakpoints: {
+      320: {
+        
+        spaceBetween: 40,
+      },
+      375: {
+        
+        spaceBetween: 30,
+      },
+      768: {
+        
+        spaceBetween: -65,
+      },
+      991: {
+       
+        spaceBetween: -32,
+      },
+      1440: {
+        slidesPerView: 1.2,
+        spaceBetween: 28,
+      },
+      1920: {
+        
+      },
+    },
+
+  });
+
+  let leftNumberSpan = document.querySelector('.companyTop__left-number');
+  leftNumberSpan.textContent = '01';
+
+  swiper.on('slideChange', function () {
+    let activeSlide = Math.ceil(swiper.activeIndex) + 1;
+    leftNumberSpan.textContent = activeSlide.toString().padStart(2, '0');
+  });
+}
+
+companyTopSwiper();
+
 function ourLatestSwiper() {
   let swiper = new Swiper(".ourLatest__swiper", {
     spaceBetween: 24,
