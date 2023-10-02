@@ -1,6 +1,9 @@
 .philocophy {
   position: relative;
   margin-bottom: 260px;
+  @media(max-width: 575px) {
+    margin-bottom: 174px;
+  }
 
   &__header {
     margin-bottom: 0;
@@ -13,12 +16,13 @@
     top: 0;
     left: 0;
     z-index: -1;
+    width: 100%;
     img {
       width: 100%;
-      min-height: 648px;
+      height: 648px;
       object-fit: cover;
       @media(max-width: 575px) {
-        min-height: 535px;
+        height: 470px;
     }
     }
   }

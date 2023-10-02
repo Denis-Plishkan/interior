@@ -1,0 +1,134 @@
+.want {
+  position: relative;
+  z-index: 3;
+  background: #fff;
+  padding-top: 100px;
+  margin-bottom: 0;
+  // .want__container
+
+  &__container {
+    padding: 0 163px 138px 150px;
+    @media(max-width: 768px) {
+        padding: 0 50px 50px;
+    }
+    @media(max-width: 575px) {
+        padding: 0 15px;
+    }
+  }
+
+  // .want__title
+
+  &__title {
+    color: var(--1, #080808);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 142.4%; /* 51.264px */
+    max-width: 424px;
+    padding-top: 36px;
+    padding-bottom: 122px;
+    @media(max-width: 1024px) {
+        font-size: 32px;
+        padding-bottom: 80px;
+    }
+    @media(max-width: 575px) {
+        font-size: 26px;
+        padding-bottom: 60px;
+        padding-top: 0;
+    }
+  }
+
+  // .want__wrapper
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    @media(max-width: 998px) {
+        flex-direction: column;
+    }
+  }
+
+  // .want__left
+
+  &__left {
+  }
+
+  // .want__form-wrapper
+
+  &__form-wrapper {
+    &::after {
+      background: #515151;
+    }
+  }
+
+  // .want__form-group
+
+  &__form-group {
+    span {
+      color: var(--1, #080808);
+    }
+    input {
+      color: var(--1, #080808);
+    }
+  }
+
+  // .want__right
+
+  &__right {
+  }
+
+  // .want__right-text
+
+  &__right-text {
+    color: var(--1, #080808);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 170.66%; /* 23.892px */
+    max-width: 367px;
+    padding-bottom: 24px;
+  }
+
+  // .want__right-wrapper
+
+  &__right-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media(max-width: 575px) {
+        display: none;
+    }
+  }
+
+  // .want__right-info
+
+  &__right-info {
+    color: var(--3, #080808);
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.66px;
+  }
+
+  // .want__right-links
+
+  &__right-links {
+    display: flex;
+    gap: 17px;
+    padding-right: 10px;
+  }
+
+  // .want__right-link
+
+  &__right-link {
+    color: var(--3, #080808);
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.66px;
+  }
+}

@@ -1,0 +1,24 @@
+.mainContact {
+  background: #000;
+  position: relative;
+  bottom: 96px;
+  margin-bottom: 0;
+
+  // .mainContact__bg
+
+  &__bg {
+  }
+
+  // .mainContact__container
+
+  &__container {
+  }
+
+  &__wrapper {
+    padding: 182px 116px 117px 129px;
+  }
+
+  &__footer-wrapper {
+    padding-bottom: 38px;
+  }
+}

@@ -1,0 +1,27 @@
+.companyLorem {
+  padding-top: 100px;
+  background-color: #080808;
+  min-height: 815px;
+  margin-bottom: 0;
+  // .companyLorem__container
+
+  &__container {
+    max-width: 1440px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 617px;
+    position: relative;
+  }
+
+  &__info-link {
+    color: #fff;
+  }
+  &__info-linkSecond {
+    color: #fff;
+  }
+  &__info-text {
+    color: #fff;
+  }
+}

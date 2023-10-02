@@ -61,11 +61,11 @@ function companyTopSwiper() {
     breakpoints: {
       320: {
         
-        spaceBetween: 40,
+        spaceBetween: -172,
       },
       375: {
         
-        spaceBetween: 30,
+        spaceBetween: -190,
       },
       768: {
         
@@ -73,7 +73,7 @@ function companyTopSwiper() {
       },
       991: {
        
-        spaceBetween: -32,
+        spaceBetween: -65,
       },
       1440: {
         slidesPerView: 1.2,
