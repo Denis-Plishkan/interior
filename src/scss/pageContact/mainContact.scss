@@ -2,9 +2,9 @@
   background: #000;
   margin-bottom: 0;
   min-height: 100vh;
-  margin-top: 97px;
+  padding-top: 97px;
   @media(max-width: 768px) {
-    margin-top: 0;
+    padding-top: 0;
   }
 
   &__header {

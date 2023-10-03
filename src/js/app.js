@@ -75,6 +75,7 @@ import dropdownHandler from './modules/dropdown.js'
 import loremForm from './modules/form.js'
 import tabOur from './modules/tab.js'
 import tabOurProjects from './modules/tab.js'
+import popUp from './modules/popUp.js'
 
 
 
