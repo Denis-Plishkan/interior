@@ -2,6 +2,10 @@
   min-height: 96px;
   display: flex;
   margin-bottom: 112px;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  background: #fff;
 
   @media(max-width: 1024px) {
     min-height: 108px;

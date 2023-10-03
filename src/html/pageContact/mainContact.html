@@ -3,24 +3,28 @@
     <img src="./images/main/contact/bg.png" alt="bg" />
   </div>
   <div class="contact__container">
-    @@include('../../components/contacts.html', {})
+    <div class="mainContact__wrapper">
+      @@include('../../components/contacts.html', {})
+    </div>
   </div>
-  <div class="mainContact__container">
+  <div class="mainContact__footer">
     <footer class="footer footer__black">
-      <div class="footer__wrapper mainContact__footer-wrapper">
-        <div class="footer__wrapper-left">
-          <p class="footer__wrapper-copyright">
-            © Copyright 2018. All rights reserved
-          </p>
-        </div>
-        <div class="footer__wrapper-right footer__wrapper-black">
-          <p class="footer__wrapper-text">Made with love in</p>
-          <div class="footer__wrapper-logo">
-            <img
-              src="./images/footer/logo.png"
-              alt="logo"
-              class="footer__logo"
-            />
+      <div class="mainContact__container">
+        <div class="footer__wrapper mainContact__footer-wrapper">
+          <div class="footer__wrapper-left">
+            <p class="footer__wrapper-copyright">
+              © Copyright 2018. All rights reserved
+            </p>
+          </div>
+          <div class="footer__wrapper-right footer__wrapper-black">
+            <p class="footer__wrapper-text">Made with love in</p>
+            <div class="footer__wrapper-logo">
+              <img
+                src="./images/footer/logo.png"
+                alt="logo"
+                class="footer__logo"
+              />
+            </div>
           </div>
         </div>
       </div>

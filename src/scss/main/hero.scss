@@ -1,15 +1,14 @@
 .hero {
-  position: relative;
-  top: -96px;
-  margin-bottom: 123px;
+  position: relative; 
+  margin-bottom: 220px;
   @media (max-width: 1060px) {
-    margin-bottom: 84px;
+    margin-bottom: 180px;
   }
   @media(max-width: 769px) {
-    margin-bottom: 8px;
+    margin-bottom: 104px;
   }
   @media(max-width: 420px) {
-    margin-bottom: -15px;
+    margin-bottom: 81px;
   }
 
   &__container {
@@ -65,7 +64,7 @@
         object-fit: unset;
       }
       @media (max-width: 575px) {
-        height: 575px;
+        height: 544px;
       }
     }
   }
@@ -84,7 +83,7 @@
         object-fit: unset;
       }
       @media (max-width: 575px) {
-        height: 575px;
+        height: 544px;
       }
     }
   }
@@ -101,7 +100,7 @@
       margin-top: 383px;
     }
     @media (max-width: 575px) {
-      margin-top: 255px;
+      margin-top: 224px;
     }
   }
 
@@ -331,7 +330,7 @@
     @media (max-width: 575px) {
       left: 23px;
       gap: 45px;
-      bottom: 21px;
+      bottom: 20px;
     }
 
     @media(max-width: 368px) {
@@ -454,7 +453,7 @@
     }
     @media (max-width: 575px) {
       left: 6.2%;
-      top: 30.2%;
+      top: 26%;
     }
   }
 
@@ -481,7 +480,7 @@
     }
     @media (max-width: 575px) {
       right: 46.5%;
-      top: 30.2%;
+      top: 26%;
       gap: 10px;
     }
   }
@@ -590,7 +589,7 @@
   }
   @media (max-width: 575px) {
     left: 18%;
-    top: 31.2%;
+    top: 27.2%;
     width: 23.5%;
   }
 }

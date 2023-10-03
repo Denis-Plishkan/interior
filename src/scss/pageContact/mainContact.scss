@@ -1,8 +1,16 @@
 .mainContact {
   background: #000;
-  position: relative;
-  bottom: 96px;
   margin-bottom: 0;
+  min-height: 100vh;
+  margin-top: 97px;
+  @media(max-width: 768px) {
+    margin-top: 0;
+  }
+
+  &__header {
+    background: #000;
+
+  }
 
   // .mainContact__bg
 
@@ -12,13 +20,31 @@
   // .mainContact__container
 
   &__container {
+    
   }
 
   &__wrapper {
-    padding: 182px 116px 117px 129px;
+    padding: 85px 130px 117px 129px;
+    @media(max-width: 1024px) {
+      padding: 110px 100px 117px 98px;
+    }
+    @media(max-width: 768px) {
+      padding: 341px 100px 117px 77px;
+    }
+    @media(max-width: 590px) {
+      padding: 94px 0;
+    }
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
   }
 
   &__footer-wrapper {
-    padding-bottom: 38px;
+    @media(max-width: 1025px) {
+      padding-bottom: 0;
+    }
   }
 }

@@ -1,13 +1,17 @@
 .antrax {
   margin-bottom: 203px;
+  margin-top: 208px;
   @media(max-width: 1024px) {
     margin-bottom: 212px;
+    margin-top: 162px;
   }
   @media (max-width: 768px) {
     margin-bottom: 177px;
+    margin-top: 139px;
   }
   @media (max-width: 376px) {
     margin-bottom: 145px;
+    margin-top: 116px;
   }
   p {
     color: var(--1, #080808);

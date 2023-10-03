@@ -1,14 +1,18 @@
 .our {
   margin-bottom: 141px;
+  margin-top: 209px;
 
   @media(max-width: 1024px) {
     margin-bottom: 124px;
+    margin-top: 161px;
   }
   @media (max-width: 768px) {
     margin-bottom: 105px;
+    margin-top: 138px;
   }
   @media (max-width: 376px) {
     margin-bottom: 81px;
+    margin-top: 117px;
   }
   // .our__container
 
