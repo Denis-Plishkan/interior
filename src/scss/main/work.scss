@@ -90,16 +90,14 @@
   &__flats {
     a {
       position: absolute;
-      
-
+      img {
+        transition: all 0.2s ease;
+      }
       @media (min-width: 998px) {
         &:hover {
-          // padding: 20px;
-          img {
-            transition: all 2s ease;
-            width: 110%;
+          img { 
+            transform: scale(1.1)
           }
-          
         }
       }
     }

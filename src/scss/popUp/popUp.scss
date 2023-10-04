@@ -27,9 +27,14 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 41px;
 
     input {
-        display: none;
+      display: none;
     }
   }
 
@@ -39,13 +44,38 @@
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.54px;
+    pointer-events: none;
+  }
+
+  &__radio-button {
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 42%;
+      left: 18px;
+      width: 85px;
+      height: 1px;
+      background: rgba(214, 214, 214, 0.30);
+    }
+  }
+  &__radio-buttonLast {
+    cursor: pointer;
+  }
+
+  &__button {
+    height: 43px;
+    background: #3A3E4B;
   }
 }
 .popUp-content {
   // .popUp-content__container
 
   &__container {
-    margin: 75px 181px 0 183px;
+    max-width: 1047px;
+    margin: 75px auto;
     background: var(--2, #f2f2f2);
     min-height: 803px;
   }
@@ -107,6 +137,10 @@
     }
   }
 
+  &__bottom-wrapper {
+    padding: 45px 70px;
+  }
+
   &__bottom-wrap {
     padding-bottom: 46px;
     position: relative;
@@ -164,6 +198,16 @@
     margin-top: 8px;
   }
 
+  &__bottom-text {
+    color: #3a3e4b;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.66px;
+    padding-bottom: 22px;
+  }
+
   &__dropdown-label {
     padding: 6px 14px 10px 0;
     width: 100%;
@@ -171,13 +215,64 @@
   &__rightSvg {
     right: -2px;
   }
-  
 
   &__bottom-lineas {
     display: flex;
     width: 665px;
     margin: 0 auto;
     justify-content: space-between;
+    padding-bottom: 51px;
   }
-}
 
+  &__button-nameFile {
+    color: #3a3e4b;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.66px;
+  }
+
+  &__button-sizeFile {
+    color: rgba(58, 62, 75, 0.45);
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.54px;
+  }
+
+  &__text-bottom {
+    color: #afb0b2;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.625%; /* 14.063px */
+    letter-spacing: 0.6px;
+  }
+
+  &__bottom-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 28px;
+  }
+
+  &__buttons-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__button-left {
+    cursor: pointer;
+  }
+
+  &__button-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+}
