@@ -12,6 +12,10 @@
     background-color: #000;
     z-index: 10;
     max-width: unset;
+    overflow-y: auto;
+    @media(max-width: 685px) {
+      left: 4px;
+    }
   }
 
   // .popUp__close
@@ -21,6 +25,10 @@
     top: 40px;
     right: 40px;
     cursor: pointer;
+    @media(max-width: 685px) {
+      top: 24px;
+      right: 20px;
+    }
   }
 
   &__linea {
@@ -32,6 +40,12 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 41px;
+    @media(max-width: 935px) {
+      width: 25%;
+    }
+    @media(max-width: 685px) {
+      width: 23%;
+    }
 
     input {
       display: none;
@@ -45,6 +59,18 @@
     line-height: normal;
     letter-spacing: 0.54px;
     pointer-events: none;
+    color: rgba(58, 62, 75, 0.45);
+  }
+  &__linea-num.active {
+    color: #3A3E4B;
+  }
+
+  &__linea-none {
+    &::after {
+      @media(max-width: 935px) {
+        display: none;
+      }
+    }
   }
 
   &__radio-button {
@@ -53,21 +79,46 @@
 
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       top: 42%;
       left: 18px;
       width: 85px;
       height: 1px;
-      background: rgba(214, 214, 214, 0.30);
+      background: rgba(214, 214, 214, 0.3);
+
+      @media(max-width: 935px) {
+        width: 104px;
+      }
+    }
+
+  }
+
+  &__radio-button.active {
+    svg {
+      font-size: 19px;
+    }
+    circle {
+      fill: #1D1F26;
     }
   }
   &__radio-buttonLast {
-    cursor: pointer;
+    &::after {
+      display: none;
+    }
   }
 
   &__button {
     height: 43px;
-    background: #3A3E4B;
+    background: #3a3e4b;
+    @media(max-width: 1025px) {
+      width: 182px;
+    }
+  }
+
+  &__validate-text {
+    font-size: 10px;
+    color: red;
+    position: absolute;
   }
 }
 .popUp-content {
@@ -78,6 +129,20 @@
     margin: 75px auto;
     background: var(--2, #f2f2f2);
     min-height: 803px;
+    @media(max-width: 1025px) {
+      max-width: 808px;
+      margin: 45px auto;
+      min-height: 664px;
+    }
+    @media(max-width: 935px) {
+      max-width: 562px;
+    }
+    @media(max-width: 685px) {
+      margin: 66px auto;
+      padding: 0;
+      max-width: 328px;
+      background: #000;
+    }
   }
 
   // .popUp-content__wrapper
@@ -85,6 +150,15 @@
   &__wrapper {
     padding-top: 54px;
     color: #3a3e4b;
+    @media(max-width: 1025px) {
+      padding-top: 32px;
+      max-width: 702px;
+      margin: 0 auto;
+    }
+    @media(max-width: 935px) {
+      max-width: 478px;
+      padding-bottom: 32px;
+    }
   }
 
   // .popUp-content__top
@@ -101,12 +175,28 @@
     justify-content: space-between;
     padding: 0 70px;
     min-height: 189px;
+    @media(max-width: 1025px) {
+      padding: 0 50px;
+    }
+    @media(max-width: 935px) {
+      padding: 0 56px;
+      min-height: 385px;
+    }
+    @media(max-width: 685px) {
+      padding: 0 25px;
+    }
   }
 
   &__top-wrap {
     width: 312px;
     height: 100%;
     position: relative;
+    @media(max-width: 1025px) {
+      width: 285px;
+    }
+    @media(max-width: 935px) {
+      width: 370px;
+    }
 
     &::after {
       position: absolute;
@@ -139,6 +229,15 @@
 
   &__bottom-wrapper {
     padding: 45px 70px;
+    @media(max-width: 1025px) {
+      padding: 45px 49px;
+    }
+    @media(max-width: 935px) {
+      padding: 45px 0;
+    }
+    @media(max-width: 685px) {
+      padding: 41px 0;
+    }
   }
 
   &__bottom-wrap {
@@ -146,6 +245,16 @@
     position: relative;
     width: 664px;
     margin: 0 auto;
+    @media(max-width: 1025px) {
+      width: 604px;
+    }
+    @media(max-width: 935px) {
+      width: 368px;
+    }
+    @media(max-width: 685px) {
+      width: 279px;
+      padding-bottom: 41px;
+    }
 
     &::after {
       position: absolute;
@@ -177,7 +286,7 @@
 
   // .popUp-content__top-title
 
-  &__top-title {
+  &__top-title-desktop {
     color: #3a3e4b;
     text-align: center;
     font-family: Montserrat;
@@ -187,6 +296,30 @@
     line-height: 126.776%; /* 27.891px */
     padding-top: 45px;
     padding-bottom: 31px;
+    @media (max-width: 1025px) {
+      display: none;
+    }
+  }
+  &__top-title-mobile {
+    display: none;
+    @media (max-width: 1025px) {
+      display: block;
+      color: #3a3e4b;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 126.776%; /* 27.891px */
+      padding-top: 42px;
+      padding-bottom: 31px;
+      @media(max-width: 935px) {
+       padding-bottom: 34px;
+      }
+      @media(max-width: 685px) {
+        padding-top: 22px;
+      }
+    }
   }
 
   // .popUp-content__bottom
@@ -206,11 +339,21 @@
     line-height: normal;
     letter-spacing: 0.66px;
     padding-bottom: 22px;
+    @media(max-width: 935px) {
+      padding-bottom: 21px;
+      padding-left: 55px;
+    }
+    @media(max-width: 685px) {
+      padding-left: 25px;
+    }
   }
 
   &__dropdown-label {
     padding: 6px 14px 10px 0;
     width: 100%;
+    @media(max-width: 1025px) {
+      border: none;
+    }
   }
   &__rightSvg {
     right: -2px;
@@ -222,6 +365,20 @@
     margin: 0 auto;
     justify-content: space-between;
     padding-bottom: 51px;
+    @media(max-width: 1025px) {
+      width: 618px;
+      padding-bottom: 33px;
+    }
+    @media(max-width: 935px) {
+      flex-wrap: wrap;
+      width: 456px;
+      row-gap: 28px;
+    }
+    @media(max-width: 685px) {
+      width: 332px;
+      row-gap: 24px;
+      padding-bottom: 20px;
+    }
   }
 
   &__button-nameFile {
@@ -251,18 +408,28 @@
     font-weight: 400;
     line-height: 140.625%; /* 14.063px */
     letter-spacing: 0.6px;
+    @media(max-width: 1025px) {
+      display: none;
+    }
   }
 
   &__bottom-buttons {
     display: flex;
     justify-content: space-between;
     padding-bottom: 28px;
+    @media(max-width: 1025px) {
+      justify-content: center;
+      padding-bottom: 0;
+    }
   }
 
   &__buttons-left {
     display: flex;
     align-items: center;
     gap: 12px;
+    @media(max-width: 1025px) {
+      display: none;
+    }
   }
 
   &__button-left {
@@ -274,5 +441,8 @@
     flex-direction: column;
     gap: 5px;
   }
+}
 
+.popUp-content__bottom-linea input[type="radio"]:checked + .popUp__radio-button {
+  background-color: #000;
 }

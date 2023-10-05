@@ -76,6 +76,9 @@ import loremForm from './modules/form.js'
 import tabOur from './modules/tab.js'
 import tabOurProjects from './modules/tab.js'
 import popUp from './modules/popUp.js'
+import popUpRadioButton from './modules/radioButton.js'
+import validatorPopUp from './modules/validator.js'
+import popUpLoadingFiles from './modules/loadingFiles.js'
 
 
 

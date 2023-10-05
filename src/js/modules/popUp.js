@@ -1,6 +1,6 @@
 
 function popUp () {
-    const popUpButtons = document.querySelectorAll('.header__button-wrapper');
+    const popUpButtons = document.querySelectorAll('.popUp__btn');
     const popUp = document.querySelector('.popUp__container');
     const closePopUp = document.querySelector('.popUp__close');
     const body = document.querySelector('body');

@@ -88,6 +88,15 @@
 
   &__button {
     border: 1px solid rgba(253, 253, 253, 0.32);
+    transition: all 0.2s ease;
+    @media(min-width: 998px) {
+      &:hover {
+        background: white;
+        color: #000;
+      }
+    }
+    
+   
 
     @media (max-width: 575px) {
       display: none;

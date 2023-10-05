@@ -22,54 +22,55 @@
   ></span>
   <div class="popUp-content__container">
     <div class="popUp-content__wrapper">
-      <form action="#">
+      <form action="#" id="popUp-form">
         <div class="popUp-content__top">
-          <h1 class="popUp-content__top-title">Calculate the cost of work</h1>
+          <h1 class="popUp-content__top-title-desktop">Calculate the cost of work</h1>
+          <h1 class="popUp-content__top-title-mobile">Make request</h1>
           <div class="popUp-content__top-wrapper">
             <div class="popUp-content__top-wrap">
               <input
                 type="text"
                 id="firstName"
                 name="firstName"
-                required
                 placeholder="Name"
               />
+              <p id="validate-name-text" class="popUp__validate-text"></p>
             </div>
             <div class="popUp-content__top-wrap">
               <input
                 type="text"
                 id="lastName"
                 name="lastName"
-                required
                 placeholder="Last name"
               />
+              <p id="validate-lastName-text" class="popUp__validate-text"></p>
             </div>
             <div class="popUp-content__top-wrap">
               <input
                 type="tel"
                 id="phoneNumber"
                 name="phoneNumber"
-                required
                 placeholder="Phone"
               />
+              <p id="validate-phone-text" class="popUp__validate-text"></p>
             </div>
             <div class="popUp-content__top-wrap">
               <input
                 type="text"
                 id="city"
                 name="city"
-                required
                 placeholder="Your city"
               />
+              <p id="validate-city-text" class="popUp__validate-text"></p>
             </div>
             <div class="popUp-content__top-wrap">
               <input
                 type="email"
                 id="email"
                 name="email"
-                required
                 placeholder="Email"
               />
+              <p id="validate-email-text" class="popUp__validate-text"></p>
             </div>
             <div class="popUp-content__top-wrap">
               <div class="hero__dropdown">
@@ -124,9 +125,9 @@
               type="text"
               id="comment"
               name="comment"
-              required
               placeholder="Your comment"
             />
+            <p id="validate-email-text" class="popUp__comment-text"></p>
           </div>
         </div>
         <div class="popUp-content__bottom">
@@ -319,7 +320,7 @@
               <div class="popUp-content__bottom-linea popUp__linea">
                 <p class="popUp__linea-num">250-400</p>
                 <input type="radio" name="num" id="num250-400" />
-                <span class="popUp__radio-button">
+                <span class="popUp__radio-button popUp__linea-none">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="18"
@@ -563,7 +564,7 @@
               <div class="popUp-content__bottom-linea_right popUp__linea">
                 <p class="popUp__linea-num">1000+</p>
                 <input type="radio" name="num" id="num1000+" />
-                <span class="popUp__radio-buttonLast">
+                <span class="popUp__radio-button popUp__radio-buttonLast">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="18"
@@ -624,6 +625,7 @@
             </div>
             <div class="popUp-content__bottom-buttons popUp-content__buttons">
               <div class="popUp-content__buttons-left">
+                <input type="file" id="fileInput" style="display: none;">
                 <div class="popUp-content__button-left">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
