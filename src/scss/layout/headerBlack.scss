@@ -124,6 +124,12 @@
       color: #000;
     }
   }
+
+  &__button {
+    @media(max-width: 575px) {
+      display: none;
+    }
+  }
 }
 
 .menu {
