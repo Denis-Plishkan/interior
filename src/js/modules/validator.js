@@ -7,6 +7,7 @@ function validatorPopUp() {
     const emailInput = document.getElementById("email");
     const buttonSubmit = document.querySelector(".popUp__button");
     const commentSubmit = document.getElementById("comment");
+    const container = document.querySelector('.popUp-content__top');
   
     const firstNameText = document.getElementById("validate-name-text");
     const lastNameText = document.getElementById("validate-lastName-text");
@@ -28,8 +29,14 @@ function validatorPopUp() {
     function updateButtonSubmit() {
       if (isFormValid()) {
         buttonSubmit.disabled = false;
+        buttonSubmit.classList.remove('invalid');
+        buttonSubmit.classList.add('valid');
+        container.classList.remove('invalid');
       } else {
         buttonSubmit.disabled = true;
+        buttonSubmit.classList.remove('valid');
+        buttonSubmit.classList.add('invalid');
+        container.classList.add('invalid');
       }
     }
   

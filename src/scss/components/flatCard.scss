@@ -131,9 +131,12 @@
       display: none;
     }
     img {
+      z-index: 1;
       transition: all 0.2s ease;
       &:hover {
         transform: scale(1.3);
+        position: relative;
+        z-index: 2;
       }
     }
   }
