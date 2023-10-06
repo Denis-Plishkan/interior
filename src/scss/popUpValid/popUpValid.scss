@@ -11,7 +11,7 @@
     height: 100%;
     background-color: #000;
     z-index: 10;
-    max-width: unset;
+    max-width: unset !important;
     overflow-y: auto;
   }
 
@@ -96,5 +96,12 @@
     margin: 0 auto;
     width: 184px;
     background: gray;
+    transition: all 0.2s ease;
+
+    @media(min-width: 998px) {
+      &:hover {
+        background: rgb(75, 73, 73);
+      }
+    }
   }
 }
