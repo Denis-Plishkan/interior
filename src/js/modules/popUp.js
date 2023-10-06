@@ -1,4 +1,3 @@
-
 function popUp () {
     const popUpButtons = document.querySelectorAll('.popUp__btn');
     const popUp = document.querySelector('.popUp__container');
@@ -22,8 +21,9 @@ function popUp () {
         body.classList.remove('_lock');
     })
 
-    popUpButtonValid.addEventListener('click', () => {
+    popUpButtonValid.addEventListener('click', (e) => {
         popUpValid.style.display = 'block';
+        e.preventDefault();
     })
 
     closePopUpValid.addEventListener('click', () => {
