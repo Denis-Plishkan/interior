@@ -1,6 +1,6 @@
 function popUpLoadingFiles() {
-    const button = document.querySelector(".popUp-content__button-left");
-    const fileName = document.querySelector(".popUp-content__button-nameFile");
+    const button = document.querySelector(".pop-up-content__button-left");
+    const fileName = document.querySelector(".pop-up-content__button-name-file");
     const fileInput = document.getElementById("fileInput");
   
     fileInput.addEventListener("change", (e) => {

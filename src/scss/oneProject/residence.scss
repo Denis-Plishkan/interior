@@ -29,6 +29,9 @@
   // .residence__container
 
   &__container {
+    @media(max-width: 575px) {
+      max-width: 600px;
+    }
   }
 
   &__wrapper {
@@ -89,7 +92,6 @@
 
   &__title-desktop {
     font-size: 36px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
     padding-bottom: 20px;
@@ -103,7 +105,6 @@
     @media (max-width: 1024px) {
       display: block;
       font-size: 32px;
-      font-style: normal;
       font-weight: 700;
       line-height: normal;
       padding-bottom: 21px;
@@ -118,7 +119,6 @@
 
   &__text {
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
     line-height: 170.66%; /* 23.892px */
     max-width: 462px;
@@ -154,7 +154,6 @@
     }
     p {
       font-size: 11px;
-      font-style: normal;
       font-weight: 600;
       line-height: normal;
       letter-spacing: 0.66px;
@@ -169,7 +168,6 @@
 
   &__bottom-text {
     font-size: 14px;
-    font-style: normal;
     font-weight: 500;
     line-height: 170.66%; /* 23.892px */
     position: absolute;

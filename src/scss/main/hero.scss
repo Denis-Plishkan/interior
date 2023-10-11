@@ -1,13 +1,13 @@
 .hero {
-  position: relative; 
+  position: relative;
   margin-bottom: 220px;
   @media (max-width: 1060px) {
     margin-bottom: 180px;
   }
-  @media(max-width: 769px) {
+  @media (max-width: 802px) {
     margin-bottom: 104px;
   }
-  @media(max-width: 420px) {
+  @media (max-width: 420px) {
     margin-bottom: 81px;
   }
 
@@ -61,7 +61,6 @@
       }
       @media (max-width: 769px) {
         height: 959px;
-        object-fit: unset;
       }
       @media (max-width: 575px) {
         height: 544px;
@@ -125,7 +124,6 @@
     }
     h1 {
       font-size: 56px;
-      font-style: normal;
       font-weight: 700;
       line-height: normal;
 
@@ -145,7 +143,6 @@
 
   &__left-number {
     font-size: 12px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.72px;
@@ -153,7 +150,6 @@
 
   &__right-number {
     font-size: 12px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.72px;
@@ -167,7 +163,6 @@
     display: flex;
     span {
       font-size: 11px;
-      font-style: normal;
       font-weight: 300;
       line-height: normal;
       letter-spacing: 0.66px;
@@ -240,7 +235,6 @@
     }
     a {
       font-size: 10px;
-      font-style: normal;
       font-weight: 700;
       line-height: normal;
       letter-spacing: 1.2px;
@@ -259,7 +253,6 @@
 
     a {
       font-size: 11px;
-      font-style: normal;
       font-weight: 600;
       line-height: normal;
       letter-spacing: 0.66px;
@@ -280,7 +273,6 @@
     }
     a {
       font-size: 11px;
-      font-style: normal;
       font-weight: 600;
       line-height: normal;
       letter-spacing: 0.66px;
@@ -333,7 +325,7 @@
       bottom: 20px;
     }
 
-    @media(max-width: 368px) {
+    @media (max-width: 368px) {
       gap: 8px;
     }
   }
@@ -370,7 +362,6 @@
     }
     p {
       font-size: 11px;
-      font-style: normal;
       font-weight: 600;
       line-height: normal;
       letter-spacing: 0.66px;
@@ -395,7 +386,6 @@
 
     h1 {
       font-size: 48px;
-      font-style: normal;
       font-weight: 700;
       line-height: 97.52%; /* 46.81px */
       letter-spacing: 1.92px;
@@ -405,7 +395,6 @@
 
       @media (max-width: 1025px) {
         font-size: 32px;
-        font-style: normal;
         font-weight: 700;
         line-height: 97.52%; /* 31.206px */
         letter-spacing: 1.28px;
@@ -451,6 +440,9 @@
       left: 51.6%;
       top: 59.6%;
     }
+    @media (max-width: 671px) {
+      left: 49.6%;
+    }
     @media (max-width: 575px) {
       left: 6.2%;
       top: 26%;
@@ -489,6 +481,51 @@
   }
 }
 
+.hero__dropdown {
+  position: relative;
+}
+
+.hero__burger-dropdown {
+  position: relative;
+  width: 117px;
+  height: 24px;
+  &::before {
+    position: absolute;
+    content: "";
+    background: url(../images/main/hero/maps-and-flags.svg);
+    display: block;
+    height: 10px;
+    width: 10px;
+    top: 5px;
+    left: 12px;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    background: url(../images/main/hero/arrow.svg);
+    display: block;
+    height: 5px;
+    width: 9px;
+    right: 10px;
+    top: 8px;
+
+  }
+
+  select {
+    background: #000;
+    color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.66px;
+    padding: 5px 41px 4px 29px;
+    border-radius: 88px;
+    border: 1px solid #c4c4c4;
+  }
+}
+
 .hero__dropdown-toggle {
   display: none;
 }
@@ -503,7 +540,6 @@
   cursor: pointer;
   position: relative;
   font-size: 11px;
-  font-style: normal;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0.66px;
@@ -515,7 +551,6 @@
     border: 1px solid #c4c4c4;
     border-radius: 88px;
     padding: 12px 11px 9px 11px;
-
   }
 
   svg {
@@ -528,10 +563,13 @@
 }
 
 .hero__dropdown-menu {
-  display: none;
+  opacity: 0;
+  overflow: hidden;
+  visibility: hidden;
   list-style: none;
   font-family: Montserrat;
   width: 118px;
+  max-height: 500px;
   border-radius: 8px;
   padding: 0;
   margin-top: 5px;
@@ -539,10 +577,10 @@
   background-color: rgb(67 62 62 / 50%);
   z-index: 1;
   text-align: center;
+  transition: all 0.2s ease;
 
   a {
     font-size: 11px;
-    font-style: normal;
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.66px;
@@ -559,6 +597,11 @@
   flex-direction: column;
   gap: 5px;
   border-top: none;
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  overflow: visible;
+  width: 100%;
 }
 
 .hero__dropdown .hero__dropdown-label.active svg {
@@ -569,9 +612,9 @@
   top: 61.9%;
   left: 72%;
   width: 13%;
-  background-color: rgb(61, 60, 60);
   height: 2px;
   z-index: 1;
+  opacity: 0.7;
 
   span {
     background-color: #fff;

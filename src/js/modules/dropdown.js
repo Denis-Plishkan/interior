@@ -1,4 +1,3 @@
-
 function dropdownHandler(
   dropdownSelector,
   labelSelector,
@@ -21,14 +20,12 @@ function dropdownHandler(
 
     items.forEach((item) => {
       item.addEventListener("click", (e) => {
+        e.preventDefault();
         if (labelText) {
           labelText.textContent = e.target.textContent;
-        console.log(labelText.textContent);
-        console.log(e.target.textContent);
-        menu.classList.remove("active");
-        label.classList.remove("active");
+          menu.classList.remove("active");
+          label.classList.remove("active");
         }
-        
       });
     });
   });
@@ -48,3 +45,4 @@ dropdownHandler(
   ".hero__dropdown-menu li",
   ".hero__label-text"
 );
+

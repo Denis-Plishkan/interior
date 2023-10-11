@@ -59,7 +59,6 @@
   &__content-title {
     h1 {
       font-size: 36px;
-      font-style: normal;
       font-weight: 700;
       line-height: normal;
       @media (max-width: 1024px) {
@@ -76,7 +75,6 @@
         color: var(--1, #080808);
         font-family: Montserrat;
         font-size: 26px;
-        font-style: normal;
         font-weight: 700;
         line-height: normal;
       }
@@ -100,7 +98,6 @@
     button {
       color: var(--5, #828282);
       font-size: 11px;
-      font-style: normal;
       font-weight: 600;
       line-height: normal;
       letter-spacing: 0.66px;
@@ -293,7 +290,6 @@
   &__card-title {
     color: var(--1, #080808);
     font-size: 28px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
     max-width: 365px;
@@ -331,7 +327,6 @@
   &__card-text {
     color: var(--1, #080808);
     font-size: 14px;
-    font-style: normal;
     font-weight: 300;
     line-height: 170.66%; /* 23.892px */
     opacity: 0.7;
@@ -357,7 +352,6 @@
   &__card-button {
     color: var(--1, #080808);
     font-size: 10px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.2px;
@@ -392,7 +386,6 @@
   &__card-info {
     color: var(--4, #fff);
     font-size: 28px;
-    font-style: normal;
     font-weight: 700;
     line-height: 126.9%; /* 35.532px */
     position: absolute;
@@ -448,7 +441,6 @@
   &__page {
     color: var(--1, #080808);
     font-size: 11px;
-    font-style: normal;
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.66px;

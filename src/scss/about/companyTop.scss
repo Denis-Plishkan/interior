@@ -1,9 +1,12 @@
-.companyTop {
+.company-top {
   margin-bottom: 244px;
   // .companyTop__container
 
   &__container {
     padding-right: 0;
+    @media(max-width: 575px) {
+      max-width: 600px;
+    }
   }
 
   // .companyTop__wrapper
@@ -39,7 +42,6 @@
   &__left-title {
     color: var(--1, #080808);
     font-size: 36px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
     max-width: 383px;
@@ -58,7 +60,6 @@
   &__left-text {
     color: var(--1, #080808);
     font-size: 14px;
-    font-style: normal;
     font-weight: 300;
     line-height: 170.66%;
     max-width: 383px;
@@ -92,7 +93,6 @@
   &__button-prev {
     color: var(--5, #828282);
     font-size: 11px;
-    font-style: normal;
     font-weight: 300;
     line-height: normal;
     letter-spacing: 0.66px;
@@ -113,7 +113,6 @@
   &__button-next {
     color: var(--5, #828282);
     font-size: 11px;
-    font-style: normal;
     font-weight: 300;
     line-height: normal;
     letter-spacing: 0.66px;
@@ -154,16 +153,17 @@
   }
 }
 
-.companyTop
-  .companyTop__container
-  .companyTop__wrapper
-  .companyTop__left
+.company-top
+  .company-top__container
+  .company-top__wrapper
+  .company-top__left
   .swiper-pagination {
   width: 227px;
   height: 1px;
   background: #cecaca;
   top: 445px;
   left: 242px;
+  z-index: 4;
   @media (max-width: 1255px) {
     left: 43px;
   }
@@ -175,7 +175,7 @@
   }
   @media (max-width: 575px) {
     width: 180px;
-    top: 210px;
+    top: 187px;
   }
   @media (max-width: 350px) {
     width: 140px;

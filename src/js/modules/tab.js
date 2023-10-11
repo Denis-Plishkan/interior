@@ -26,9 +26,9 @@ function tabOur() {
 tabOur();
 
 function tabOurProjects() {
-  const container = document.querySelector(".ourProjects__inner");
+  const container = document.querySelector(".our-projects__inner");
   if (container) {
-    let mixer2 = mixitup(".ourProjects__inner", {
+    let mixer2 = mixitup(".our-projects__inner", {
       load: {
         filter: ".house",
       },
@@ -36,7 +36,7 @@ function tabOurProjects() {
   }
 
   const buttons = document.querySelectorAll(
-    ".ourProjects__content-links button"
+    ".our-projects__content-links button"
   );
 
   buttons.forEach(function (button) {

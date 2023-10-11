@@ -7,89 +7,108 @@
   z-index: 5;
   background: #fff;
 
-  @media(max-width: 1024px) {
+  @media (max-width: 1024px) {
     min-height: 108px;
     margin-bottom: 53px;
   }
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     min-height: 94px;
     margin-bottom: 44px;
   }
-  @media(max-width: 575px) {
+  @media (max-width: 575px) {
     min-height: 57px;
     margin-bottom: 44px;
   }
-  @media(max-width: 376px) {
+  @media (max-width: 376px) {
     min-height: 63px;
     margin-bottom: 53px;
   }
 
   &__button-wrapper {
     border: 1px solid #000;
+
+    @media (max-width: 575px) {
+      display: none;
+    }
   }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @media (max-width: 575px) {
+      max-width: 520px;
+      padding: 0 25px;
+    }
+  }
+
   &__icon-menu {
     display: none;
-  @include media(1024) {
-    display: block;
-    position: relative;
-    width: rem(30);
-    height: rem(18);
-    cursor: pointer;
-    z-index: 6;
-    span,
-    &::before,
-    &::after {
-      content: "";
-      transition: all 300ms ease 0ms;
-      right: 0;
-      position: absolute;
-      width: 100%;
-      height: rem(2);
-      background-color: #000;
-    }
-    &::before {
-      width: 27px;
-      top: 0;
-      border-radius: 10px;
-
-      @media (max-width: 768px) {
-        top: 2px;
-      }
-    }
-    &::after {
-      width: 0;
-    }
-    span {
-      top: calc(50% - rem(1));
-      width: 27px;
-      border-radius: 10px;
-
-      @media (max-width: 768px) {
-        top: 10px;
-      }
-      @media (max-width: 575px) {
-        top: 9px;
-      }
-    }
-    &._active {
-      span {
-        width: 0;
+    @include media(1024) {
+      display: block;
+      position: relative;
+      width: rem(30);
+      height: rem(18);
+      cursor: pointer;
+      z-index: 15;
+      span,
+      &::before,
+      &::after {
+        content: "";
+        transition: all 300ms ease 0ms;
+        right: 0;
+        position: absolute;
+        width: 100%;
+        height: rem(2);
+        background-color: #000;
       }
       &::before {
-        top: calc(50% - rem(1));
-        transform: rotate(-45deg);
-        color: #fff;
+        width: 27px;
+        top: 0;
+        border-radius: 10px;
+
+        @media (max-width: 768px) {
+          top: 2px;
+        }
       }
       &::after {
-        bottom: 0;
+        width: 0;
+      }
+      span {
+        top: calc(50% - rem(1));
         width: 27px;
         border-radius: 10px;
-        bottom: calc(50% - rem(1));
-        transform: rotate(45deg);
-        color: #fff;
+
+        @media (max-width: 768px) {
+          top: 10px;
+        }
+        @media (max-width: 575px) {
+          top: 9px;
+        }
+      }
+      &._active {
+        span {
+          width: 0;
+        }
+        &::before {
+          top: calc(50% - rem(1));
+          transform: rotate(-45deg);
+          color: #fff;
+        }
+        &::after {
+          bottom: 0;
+          width: 27px;
+          border-radius: 10px;
+          bottom: calc(50% - rem(1));
+          transform: rotate(45deg);
+          color: #fff;
+        }
       }
     }
-  }
+    @media (max-width: 575px) {
+      right: 10px;
+    }
     &::after {
       background-color: #000;
     }
@@ -103,14 +122,14 @@
 
   &__icon-menu._active {
     &::after {
-        background-color: #fff;
-      }
-      &::before {
-        background-color: #fff;
-      }
-      span {
-        background-color: #fff;
-      }
+      background-color: #fff;
+    }
+    &::before {
+      background-color: #fff;
+    }
+    span {
+      background-color: #fff;
+    }
   }
 
   &__menu-content {
@@ -126,7 +145,7 @@
   }
 
   &__button {
-    @media(max-width: 575px) {
+    @media (max-width: 575px) {
       display: none;
     }
   }
@@ -136,7 +155,7 @@
   &__item-black {
     a {
       color: #000;
-      @media(max-width: 1024px) {
+      @media (max-width: 1024px) {
         color: #fff;
       }
     }
@@ -144,7 +163,18 @@
 }
 
 .black-header__icon-menu.active {
-    button-black {
-        color: #fff;
-    }
+  button-black {
+    color: #fff;
+  }
+}
+
+.white-header__logo {
+  display: none;
+  z-index: 10;
+}
+
+.header__right-black {
+  @media(max-width: 575px) {
+    padding-right: 30px;
+  }
 }

@@ -1,4 +1,4 @@
-.ourProjects {
+.our-projects {
   margin-bottom: 0;
   margin-top: 208px;
   @media(max-width: 1024px) {
@@ -55,7 +55,6 @@
   &__content-title {
     color: var(--1, #080808);
     font-size: 36px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
     padding-left: 133px;
@@ -75,7 +74,6 @@
   &__content-text {
     color: var(--1, #080808);
     font-size: 14px;
-    font-style: normal;
     font-weight: 300;
     line-height: 170.66%; /* 23.892px */
     max-width: 449px;
@@ -104,7 +102,6 @@
     button {
       color: var(--5, #828282);
       font-size: 11px;
-      font-style: normal;
       font-weight: 600;
       line-height: normal;
       letter-spacing: 0.66px;
@@ -150,7 +147,7 @@
 
   }
 
-  &__flatCard-wrapper {
+  &__flat-card-wrapper {
     padding-bottom: 181px;
 
     @media(max-width: 1024px) {
@@ -175,6 +172,7 @@
     display: none; 
     @media(max-width: 376px) {
       display: block;
+      max-width: 128px;
     }
   }
 
@@ -193,7 +191,7 @@
     }
   }
 
-  &__card-desktopTwo {
+  &__card-desktop-two {
     @media(max-width: 768px) {
       display: none;
     }

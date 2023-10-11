@@ -11,8 +11,8 @@ function heroSwiper() {
   
   let swiper = new Swiper(".hero__swiper", {
     spaceBetween: 0,
-    slidesPerView: 'auto',
-    slidesPerGroup: 2,
+    slidesPerView: 1.175,
+    slidesPerGroup: 1,
     navigation: {
       nextEl: '.hero__button-next',
       prevEl: '.hero__button-prev',
@@ -30,7 +30,7 @@ function heroSwiper() {
   leftNumberSpan.textContent = '01';
 
   swiper.on('slideChange', function () {
-    let activeSlide = Math.ceil(swiper.activeIndex / 2) + 1;
+    let activeSlide = swiper.activeIndex + 1;
     leftNumberSpan.textContent = activeSlide.toString().padStart(2, '0');
   });
 }
@@ -38,18 +38,18 @@ function heroSwiper() {
 heroSwiper();
 
 function companyTopSwiper() {
-  const heroSwiper = document.querySelector('.companyTop__swiper');
+  const heroSwiper = document.querySelector('.company-top__swiper');
   if (!heroSwiper) {
     return;
   }
   
-  let swiper = new Swiper(".companyTop__swiper", {
+  let swiper = new Swiper(".company-top__swiper", {
     spaceBetween: 0,
     slidesPerView: 'auto',
     slidesPerGroup: 1,
     navigation: {
-      nextEl: '.companyTop__button-next',
-      prevEl: '.companyTop__button-prev',
+      nextEl: '.company-top__button-next',
+      prevEl: '.company-top__button-prev',
     },
     pagination: {
       el: '.swiper-pagination',
@@ -86,7 +86,7 @@ function companyTopSwiper() {
 
   });
 
-  let leftNumberSpan = document.querySelector('.companyTop__left-number');
+  let leftNumberSpan = document.querySelector('.company-top__left-number');
   leftNumberSpan.textContent = '01';
 
   swiper.on('slideChange', function () {
@@ -98,7 +98,7 @@ function companyTopSwiper() {
 companyTopSwiper();
 
 function ourLatestSwiper() {
-  let swiper = new Swiper(".ourLatest__swiper", {
+  let swiper = new Swiper(".our-latest__swiper", {
     spaceBetween: 24,
     slidesPerView: 'auto',
     loop: true,

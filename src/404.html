@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': '404'
+  })
+  <body>
+    @@include('html/popUp/popUp.html', {})
+    @@include('html/popUpValid/popUpValid.html', {})
+    <div class="wrapper">
+      @@include('html/header.html', {})
+      <main class="page">
+        <div data-observ></div>
+        @@include('html/errors/404.html', {})
+        
+      </main>
+    </div>
+    @@include('html/script.html', {})
+  </body>
+</html> 

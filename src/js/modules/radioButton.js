@@ -1,12 +1,12 @@
 function popUpRadioButton() {
-  const radioButtons = document.querySelectorAll(".popUp__radio-button");
+  const radioButtons = document.querySelectorAll(".pop-up__radio-button");
 
   radioButtons.forEach((radioButton) => {
     radioButton.addEventListener("click", () => {
       radioButtons.forEach((btn) => {
         btn.classList.remove("active");
         const parent = btn.parentElement;
-        const lineaNumElement = parent.querySelector(".popUp__linea-num");
+        const lineaNumElement = parent.querySelector(".pop-up__linea-num");
         lineaNumElement.classList.remove("active");
       });
 
@@ -14,7 +14,7 @@ function popUpRadioButton() {
 
       const parent = radioButton.parentElement;
 
-      const lineaNumElement = parent.querySelector(".popUp__linea-num");
+      const lineaNumElement = parent.querySelector(".pop-up__linea-num");
       lineaNumElement.classList.add("active");
     });
   });

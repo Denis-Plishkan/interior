@@ -1,25 +1,39 @@
+
 function preloader() {
-  document.addEventListener("DOMContentLoaded",() => {
+  document.addEventListener("DOMContentLoaded", () => {
     const loaderPercent = document.getElementById("preloader-percent");
     const preloaderText = document.getElementById("preloader-text");
     const preloaderContainer = document.querySelector(".preloader__container");
+    const body = document.querySelector("body");
 
-    let percent = 30;
-    const interval = setInterval(() => {
-      percent += 1;
+    const images = document.querySelectorAll("img");
+    let loadedImages = 0;
+
+    const updateLoader = () => {
+      body.classList.add("_lock");
+      loadedImages++;
+      const percent = Math.round((loadedImages / images.length) * 100);
       loaderPercent.textContent = `${percent}%`;
 
-      if (percent >= 100) {
-        clearInterval(interval);
+      if (loadedImages === images.length) {
         setTimeout(() => {
           preloaderText.style.display = "none";
           loaderPercent.textContent = "HILIGHT";
           setTimeout(() => {
             preloaderContainer.style.display = "none";
+            body.classList.remove("_lock");
           }, 500);
-        }, 0);
+        }, 250);
       }
-    }, 20);
+    };
+
+    images.forEach((img) => {
+      if (img.complete) {
+        updateLoader();
+      } else {
+        img.addEventListener("load", updateLoader);
+      }
+    });
   });
 }
 

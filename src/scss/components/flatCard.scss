@@ -1,4 +1,4 @@
-.flatCard {
+.flat-card {
   // .flatCard__wrapper
 
   &__wrapper {
@@ -8,7 +8,7 @@
     max-width: 1048px;
     margin: 0 auto;
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1150px) {
       flex-direction: column;
       align-items: center;
     }
@@ -29,7 +29,7 @@
     max-width: 424px;
     position: relative;
     z-index: 2;
-    @media (max-width: 1024px) {
+    @media (max-width: 1150px) {
       text-align: center;
       max-width: 363px;
     }
@@ -46,7 +46,7 @@
       font-style: normal;
       font-weight: 700;
       line-height: 142.4%; /* 51.264px */
-      @media (max-width: 1024px) {
+      @media (max-width: 1150px) {
         font-size: 32px;
       }
       @media (max-width: 376px) {
@@ -60,7 +60,7 @@
 
   &__right {
     padding-top: 180px;
-    @media (max-width: 1024px) {
+    @media (max-width: 1150px) {
       padding-top: 24px;
     }
     @media (max-width: 376px) {
@@ -75,7 +75,7 @@
     padding-bottom: 44px;
     position: relative;
     z-index: 2;
-    @media (max-width: 1024px) {
+    @media (max-width: 1150px) {
       text-align: center;
       max-width: 452px;
       padding-bottom: 68px;
@@ -110,7 +110,7 @@
       }
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1150px) {
       margin: 0 auto;
       width: 185px;
       height: 41px;
@@ -127,7 +127,7 @@
     position: absolute;
     top: 110px;
     left: 142px;
-    @media (max-width: 1024px) {
+    @media (max-width: 1150px) {
       display: none;
     }
     img {

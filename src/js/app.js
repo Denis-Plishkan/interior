@@ -80,6 +80,10 @@ import popUpRadioButton from './modules/radioButton.js'
 import validatorPopUp from './modules/validator.js'
 import popUpLoadingFiles from './modules/loadingFiles.js'
 import preloader from './modules/preloader.js'
+import whiteHeader from './modules/stickyHeader.js'
+import blackHeader from './modules/stickyHeader.js'
+
+
 
 
 

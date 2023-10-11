@@ -1,4 +1,4 @@
-.ourLatest {
+.our-latest {
     margin-bottom: 0;
   // .ourLatest__container
 
@@ -32,7 +32,6 @@
     left: 54px;
     color: var(--5, #828282);
     font-size: 8px;
-    font-style: normal;
     font-weight: 700;
     line-height: 170.66%; /* 13.653px */
     letter-spacing: 1.6px;
@@ -69,7 +68,6 @@
   &__title {
     color: var(--1, #080808);
     font-size: 36px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
     padding-bottom: 72px;
@@ -137,7 +135,6 @@
   &__swiper-title {
     color: #3a3e4b;
     font-size: 14px;
-    font-style: normal;
     font-weight: 700;
     line-height: 137.16%; /* 19.202px */
     padding-bottom: 13px;
@@ -151,7 +148,6 @@
   &__swiper-date {
     color: #828282;
     font-size: 10px;
-    font-style: normal;
     font-weight: 300;
     line-height: 170.66%; /* 17.066px */
   }
