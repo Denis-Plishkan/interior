@@ -85,7 +85,7 @@
       content: "";
       top: 42%;
       left: 18px;
-      width: 85px;
+      width: 94px;
       height: 1px;
       background: rgba(214, 214, 214, 0.3);
       z-index: -1;
@@ -112,6 +112,7 @@
   &__radio-button.active {
     svg {
       font-size: 19px;
+      height: 20px;
     }
     circle {
       fill: #1D1F26;

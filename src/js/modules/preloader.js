@@ -1,4 +1,3 @@
-
 function preloader() {
   document.addEventListener("DOMContentLoaded", () => {
     const loaderPercent = document.getElementById("preloader-percent");
@@ -10,20 +9,22 @@ function preloader() {
     let loadedImages = 0;
 
     const updateLoader = () => {
-      body.classList.add("_lock");
-      loadedImages++;
-      const percent = Math.round((loadedImages / images.length) * 100);
-      loaderPercent.textContent = `${percent}%`;
+      if (preloaderContainer) {
+        body.classList.add("_lock");
+        loadedImages++;
+        const percent = Math.round((loadedImages / images.length) * 100);
+        loaderPercent.textContent = `${percent}%`;
 
-      if (loadedImages === images.length) {
-        setTimeout(() => {
-          preloaderText.style.display = "none";
-          loaderPercent.textContent = "HILIGHT";
+        if (loadedImages === images.length) {
           setTimeout(() => {
-            preloaderContainer.style.display = "none";
-            body.classList.remove("_lock");
-          }, 500);
-        }, 250);
+            preloaderText.style.display = "none";
+            loaderPercent.textContent = "HILIGHT";
+            setTimeout(() => {
+              preloaderContainer.style.display = "none";
+              body.classList.remove("_lock");
+            }, 500);
+          }, 250);
+        }
       }
     };
 
